@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de valores feito pelo usuário</title>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat(prompt("Digite o primeiro numero para o calculo"))
+        let n2 = parseFloat(prompt("digite o segundo numero para o calculo"))
+        let sinal = parseInt(prompt("digite o sinal que será utilizado sendo 1-Adição 2-Subtração 3-Divisão 4-Multiplicação"))
+        
+
+        if(sinal == 1){
+            document.write("A soma de " + n1 + " e " +n2 + " será: " + (n1+n2))
+        }else{
+            if(sinal == 2){
+                document.write("A subtração de " + n1 + " e " + n2 + " será: " + (n1-n2))
+            }else{
+                if(sinal == 3){
+                    document.write("A divisão de " + n1 + " e " + n2 + " será: " + (n1/n2))
+                }else{
+                    if(sinal == 4){
+                        document.write("A multiplicação de " + n1 + " e " + n2 + " será: " + (n1*n2))
+                    }
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

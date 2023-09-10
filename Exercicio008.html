@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docume</title>
+</head>
+<body>
+    <script>
+        let n1 =  parseFloat(prompt("digite o primeiro numero"))
+        let n2 =  parseFloat(prompt("digite o segundo numero"))
+        let n3 =  parseFloat(prompt("digite o terceiro numero"))
+        let n4 =  parseFloat(prompt("digite o quarto numero"))
+        let soma = 0
+        
+
+        if(n1 >0 && n1<10){
+            soma = soma + n1
+        }
+        
+        if(n2>0 && n2<10){
+            soma = soma + n2
+        }
+
+        if(n3>0 && n3<10){
+            soma = soma + n3
+        }
+
+        if(n4>0 && n4<10){
+            soma = soma + n4
+        }
+        
+        const media = (soma)/4
+        document.write("A média dos numeros é sendo menor que 10 e maior que 0 é: " + media + "<br>")
+         
+        if(media >5){
+            document.write("Você passou no teste")
+        }else{
+            document.write("tente novamente")
+        }
+
+    </script>
+</body>
+</html>

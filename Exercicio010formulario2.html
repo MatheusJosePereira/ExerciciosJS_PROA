@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let lados = parseInt(prompt("Digite o numero de lados do seu poligono:"))
+        let medida1 = parseFloat(prompt("Digite a medida do primeiro lado do seu poligono será visto como (cm):"))
+        let medida2 = parseFloat(prompt("Digite a medida do segundo lado do seu poligono será visto como (cm):"))
+        let medida3 = parseFloat(prompt("Digite a medida do terceiro lado do seu poligono será visto como (cm):"))
+        let medida4 = parseFloat(prompt("Digite a medida do quarto lado do seu poligono será visto como (cm) Caso ele tenha apenas 3 lados digite 0 neste campo:"))
+        const perimetro = medida1 + medida2 + medida3 + medida4
+        const area = medida1 * medida2
+
+        if(lados == 3){
+            document.write("É um TRIÂNGULO e o valor do seu perimetro é: " + perimetro )
+        }else{
+            if(lados == 4){
+                document.write("É um QUADRADO e o valor de sua área é: " + area)
+            }else{
+                if(lados == 5){
+                    document.write("É um PENTAGONO")
+                }else{
+                    if(lados < 3){
+                        document.write("Não é um POLIGONO")
+                    }else{
+                        if(lados > 5){
+                            document.write("POLÍGONO NÃO IDENTIFICADO")
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

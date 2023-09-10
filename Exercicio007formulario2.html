@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de maças cada e duzia</title>
+</head>
+<body>
+    <script>
+        let macas = parseInt(prompt("numero de macas compradas"))
+        let cada = 3.50
+
+        if(macas  != 12){
+            document.write("Você comprou " +macas + " Maças"+"<br>"+ "logo o valor delas será R$" + macas*cada + " sendo o valor de cada uma R$3,50")
+        }else{
+            if(macas == 12)
+                document.write("Você compro " + macas + " Maças" + "<br>" + "logo o valor delas será R$" + "2,50" + " sendo o valor da duzia R$2,50" )
+        }
+    </script>
+</body>
+</html>

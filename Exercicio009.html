@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa para saber se você pode votar este ano ou não ano:2023</title>
+</head>
+<body>
+    <script>
+        document.write("Programa para saber se você pode ou não votar!" +"<br>")
+        let ano = parseInt(prompt("Insira o ano que você nasceu:"))
+
+        if(ano == 2007 || ano == 2006 ) {
+            document.write("voto opcional")
+        }else{
+            if(ano >= 2008){
+                document.write("Não pode votar")
+            }else{
+                if(ano <= 2005){
+                    document.write("voto obrigatório")
+                }
+            }
+        }
+    </script>
+</body>
+</html>

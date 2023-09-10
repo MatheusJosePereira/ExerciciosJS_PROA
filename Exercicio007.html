@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibição de 6 numeros e soma deles abaixo de 72</title>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat(prompt("Digite o primeiro numero"))
+        let n2 = parseFloat(prompt("Digite o segundo numero"))
+        let n3 = parseFloat(prompt("Digite o terceiro numero"))
+        let n4 = parseFloat(prompt("Digite o quarto numero"))
+        let n5 = parseFloat(prompt("Digite o quinto numero"))
+        let n6 = parseFloat(prompt("Digite o sexto numero"))
+        let soma = 0
+        
+        document.write("Os numeros digitados para o calculo e a exibição são:" + "<br>" +"Primeiro numero: " + n1 + "<br>" + "Segundo numero: " + n2 + "<br>" + "Terceiro numero:" + n3 + "<br>" + "Quarto numero: " + n4 + "<br>" + "Quinto numero: " + n5 + "<br>" + "Sexto numero: " + n6  +"<br>")
+          
+        if(n1 <72){
+            soma = soma + n1   
+        if(n2<72){
+           soma = soma + n2
+            
+        if(n3<72){
+            soma = soma + n3
+                
+        if(n4<72){
+        soma = soma + n4
+                    
+        if(n5<72){
+        soma = soma + n5
+                        
+        if(n6<72){
+        soma = soma + n6
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        document.write("A soma dos numeros abaixo de 72 é: " + soma)
+    </script>
+</body>
+</html>

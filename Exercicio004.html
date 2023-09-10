@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir se entre os 2 numeros qual é o maior e se são iguais ou não</title>
+</head>
+<body>
+    <script>
+        //ENTRADO DE DADOS NUMEROS
+        let numero1 = parseFloat(prompt("Digite o primeiro numero:"))
+        let numero2 = parseFloat(prompt("Digite o segundo numero:"))
+        //CONDIÇÕES
+        if(numero1 == numero2){
+            document.write("Números iguais")
+        }else{
+            if(numero1 > numero2){
+                document.write("Primeiro é maior")
+            }else{
+                if(numero1 < numero2){
+                    document.write("Segundo é maior")
+                }
+            }
+        }
+    </script>
+</body>
+</html>

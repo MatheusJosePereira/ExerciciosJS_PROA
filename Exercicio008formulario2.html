@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corinthians vs Palmeiras</title>
+</head>
+<body>
+    <script>
+        let corinthians = parseInt(prompt("Quantos gols o Corinthians fez:"))
+        let palmeiras = parseInt(prompt("Quantos gols o Palmeiras fez:"))
+
+        if(corinthians > palmeiras){
+            document.write("O corinthians ganhou a partida com: " + corinthians + " Gols!")
+        }else{
+            if(palmeiras > corinthians){
+                document.write("O palmeiras ganhou a partida com: " + palmeiras + " Gols! palmeiras tem mundial agora")
+            }else{
+                if( palmeiras == corinthians){
+                    document.write("O JOGO FOI EMPATE!")
+                }
+            }
+        }
+    </script>
+</body>
+</html>

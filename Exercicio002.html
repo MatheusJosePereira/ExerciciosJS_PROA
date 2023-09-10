@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar se o numero é negativo, positivo ou zero</title>
+</head>
+<body>
+    <script>
+
+        //ENTRADA DE DADOS DO NUMERO
+        let numero = parseFloat(prompt("Digite o numero para saber se é positivo, negativo ou zero:"))
+        //CONDIÇÕES 
+        if(numero == 0){
+            document.write("Este numero é ZERO:" + "<br>" + "numero digitado: " +numero)
+        }else{
+            if(numero <= -1){
+                document.write("Este numero é NEGATIVO" + "<br>" + "numero digitado: " + numero)
+            }else{
+                if(numero >=1){
+                    document.write("Este numero é POSITIVO" + "<br>" + "numero digitado: " + numero )
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça um programa para ler 3 valores Considerando: que não serão valores iguais. e escrever o maior deles</title>
+</head>
+<body>
+    <script>
+        //ENTRADA DE DADOS COM NUMEROS
+        let valor1 = parseFloat(prompt("Escreva o primeiro valor: "))
+        let valor2 = parseFloat(prompt("Escreva o segundo valor: "))
+        let valor3 = parseFloat(prompt("Escreva o terceiro valor: "))
+        //CONDIÇÕES
+        if(valor1 > valor2 && valor1 > valor3){
+            document.write("O primeiro valor digitado é maior que os outros sendo o valor: " + "<br>" +valor1)
+        }else{
+            if(valor2> valor1 && valor2>  valor3){
+                document.write("O segundo valor digitado é o maior que os outros sendo o valor" + "<br>" +valor2)
+            }else{
+                if(valor3 > valor1 && valor3 > valor2){
+                    document.write("O terceiro valor digitado é maior que os outros sendo o valor" + "<br>" +valor3)
+                }
+            }
+        }
+    </script>
+</body>
+</html>

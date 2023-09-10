@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Programa feito com JS que o Usuario informa dois numeros e aparece o maior deles:</h2>
+    <script>
+        //ENTRADA DE DADOS NUMEROS
+        let numero1 = parseFloat(prompt("Digite o primeiro numero:"))
+        let numero2 = parseFloat(prompt("Digite o segundo numero:"))
+        //CONDIÇÕES
+        if(numero1 > numero2){
+            document.write("O maior numero é o primeiro digitado o: " + numero1)
+        }else{
+            if(numero1< numero2){
+                document.write("O maior numero é o segundo digitado o: " + numero2)
+            }else{
+                if(numero1 == numero2){
+                    document.write("Ambos os numeros são iguais logo não é possivel saber qual o maior! " + "<br>" + "numero digitado: " +numero1)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
